@@ -9,6 +9,9 @@
  */
 
 
+/*
+  http://en.wikipedia.org/wiki/Sieve_of_Atkin
+*/
 var sieveOfAtkin = function (limit)
 {
     /*
@@ -74,6 +77,8 @@ var sieveOfAtkin = function (limit)
 
 /*
   Do the prime factorization.
+
+  http://en.wikipedia.org/wiki/Trial_division
 */
 var trialDivision = function (candidate)
 {
