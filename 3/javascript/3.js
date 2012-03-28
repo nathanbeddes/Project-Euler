@@ -9,34 +9,92 @@
  */
 
 
-var isPrime = function (candidate)
+var sieveOfAtkin = function (limit)
 {
-   if (candidate === 1) {
-      return false;
-   }
-   if (candidate === 2) {
-      return true;
-   }
+    /*
+      Initialize the sieve.
+    */
+    var isPrime = [false, false, true, true, false];
+    for (var i = 5; i <= limit; ++i) {
+	isPrime.push(false);
+    }
+    var sqrtLimit = Math.floor(Math.sqrt(limit));
 
-   if ((candidate % 2) === 0) {
-      return false;
-   }
+    /*
+      Put in candidate primes:
+      Integers which have an odd number of representations by certain quadratic
+      forms.
+     */
+    var n;
+    var x;
+    var y;
+    for (x = 1; x <= sqrtLimit; ++x) {
+	for (y = 1; y <= sqrtLimit; ++y) {
+	    n = (4*x*x + y*y);
+	    if ((n <= limit) && (((n % 12) === 1) || ((n % 12) === 5))) {
+		isPrime[n] = !isPrime[n];
+	    }
+	    n = (3*x*x + y*y);
+	    if ((n <= limit) && ((n % 12) === 7)) {
+		isPrime[n] = !isPrime[n];
+	    }
+	    n = (3*x*x - y*y);
+	    if ((x > y) && (n <= limit) && ((n % 12) === 11)) {
+		isPrime[n] = !isPrime[n];
+	    }
+	}
+    }
 
-   var upper = floor(sqrt(candidate));
-   var divisor = 3;
-   while (divisor <= upper) {
-      if ((candidate % divisor) === 0) {
-         return false;
-      }
-      divisor += 2;
-   }
+    /*
+      Eliminate composites by 'sieving'.
+    */
+    var k;
+    for (n = 5; n <= sqrtLimit; ++n) {
+	if (isPrime[n]) {
+	    for (k = n*n; k <= limit; k *= n) {
+		isPrime[k] = false;
+	    }
+	}
+    }
 
-   return true;
+    var primes = [];
+    for (var i = 2; i < isPrime.length; ++i) {
+	if (isPrime[i]) {
+	    primes.push(i);
+	}
+    }
+	    
+    return primes;
 };
 
 
-var findFactors = function (candidate)
+var trialDivision = function (candidate)
 {
-   var lower = 2;
-   var upper = floor(candidate/2);
+    if (candidate === 1) {
+	return 1;
+    }
+
+    var primes = sieveOfAtkin(Math.sqrt(candidate) + 1);
+    var primeFactors = [];
+
+    for (var i = 1; i < primes.length; ++i) {
+	var p = primes[i];
+	if (p*p > candidate) {
+	    break;
+	}
+	while ((candidate % p) === 0) {
+	    primeFactors.push(p);
+	    candidate /= p;
+	}
+    }
+    if (candidate > 1) {
+	primeFactors.push(candidate);
+    }
+
+    return primeFactors;
 };
+
+var target = 600851475143;
+var primeFactors = trialDivision(target);
+console.log(primeFactors[primeFactors.length-1]);
+
