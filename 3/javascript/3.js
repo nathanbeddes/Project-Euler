@@ -57,6 +57,10 @@ var sieveOfAtkin = function (limit)
 	}
     }
 
+    /*
+      We only have a sieve filled with booleans right now; generate the actual
+      list of prime numbers.
+    */
     var primes = [];
     for (var i = 2; i < isPrime.length; ++i) {
 	if (isPrime[i]) {
@@ -68,13 +72,16 @@ var sieveOfAtkin = function (limit)
 };
 
 
+/*
+  Do the prime factorization.
+*/
 var trialDivision = function (candidate)
 {
     if (candidate === 1) {
 	return 1;
     }
 
-    var primes = sieveOfAtkin(Math.sqrt(candidate) + 1);
+    var primes = sieveOfAtkin(Math.ceil(Math.sqrt(candidate)));
     var primeFactors = [];
 
     for (var i = 1; i < primes.length; ++i) {
@@ -96,5 +103,8 @@ var trialDivision = function (candidate)
 
 var target = 600851475143;
 var primeFactors = trialDivision(target);
+/*
+  Report only the largest prime factor found.
+*/
 console.log(primeFactors[primeFactors.length-1]);
 
