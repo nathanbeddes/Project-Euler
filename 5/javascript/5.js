@@ -10,7 +10,7 @@ Answer:
 232792560
 */
 
-var LMC = function (upper)
+var LCM1 = function (upper)
 {
    var sequence = Array();
    for (var i = 0; i < upper; ++i) {
@@ -45,6 +45,42 @@ var LMC = function (upper)
    return sequence[0];
 };
 
-//console.log(LCM1(10));
+
+var LCM2 = function (upper)
+{
+    var sequence = Array();
+    var primes = [2, 3, 5, 7, 11, 13, 17, 19];
+    var primesOfLCM = Array();
+
+    for (var i = 0; i < upper; ++i) {
+	sequence.push(i+1);
+    }
+
+    var divided;
+    for (var i = 0; i < primes.length; ++i) {
+	do {
+	    divided = false;
+	    for (var j = 0; j < upper; ++j) {
+		if ((sequence[j] % primes[i]) === 0) {
+		    divided = true;
+		    sequence[j] /= primes[i];
+		}
+	    }
+	    if (divided) {
+		primesOfLCM.push(primes[i]);
+	    }
+	} while (divided);
+    }
+
+    var result = 1;
+    for (var i = 0; i < primesOfLCM.length; ++i) {
+	result *= primesOfLCM[i];
+    }
+    return result;
+};
+
+
+//console.log(LCM1(20));
+console.log(LCM2(20));
 //console.log(2520);
 console.log(232792560);
