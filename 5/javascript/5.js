@@ -80,7 +80,4 @@ var LCM2 = function (upper)
 };
 
 
-//console.log(LCM1(20));
 console.log(LCM2(20));
-//console.log(2520);
-console.log(232792560);

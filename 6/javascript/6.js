@@ -38,7 +38,6 @@ var squareOfSums = function (upper)
     return(sum*sum);
 };
 
-console.log(sumOfSquares(100));
-console.log(squareOfSums(100));
+
 console.log(squareOfSums(100) - sumOfSquares(100));
 
