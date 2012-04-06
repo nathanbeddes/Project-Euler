@@ -7,6 +7,5 @@ become familiar with.
 
 ## Directory Structure
 
-From the top level, each directory is numbered by the
-[problem](http://projecteuler.net/problems) I attempt to solve. Each
-subdirectory is named by the programming language I implement the solution in.
+Each sub-directory is named after the programming language I implement the
+solution for each [problem](http://projecteuler.net/problems) in.
