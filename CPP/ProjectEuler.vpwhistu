@@ -1,0 +1,115 @@
+[Global]
+CurrentProject=Problem1/Problem1.vpj
+[ActiveConfig]
+Problem1/Problem1.vpj=Debug
+MyTimer.vpj=Debug
+MyTimer/MyTimer.vpj=Debug
+../Problem2.vpj=Debug
+Problem2/Problem2.vpj=Debug
+Problem3/Problem3.vpj=Debug
+[ProjectDates]
+Problem1/Problem1.vpj=20081126041328000
+MyTimer.vpj=20081119053429000
+MyTimer/MyTimer.vpj=20081119055234000
+../Problem2.vpj=20081119055109000
+Problem2/Problem2.vpj=20081119055415000
+Problem3/Problem3.vpj=20081210044642000
+[TreeExpansion2]
++ MyTimer/MyTimer.vpj
+- Problem1/Problem1.vpj
+  - Source Files
+  - Header Files
+  - Resource Files
+  - Bitmaps
+  - Other Files
+- Problem2/Problem2.vpj
+  - Source Files
+  + Header Files
+  + Resource Files
+  + Bitmaps
+  + Other Files
+- Problem3/Problem3.vpj
+  - Source Files
+  + Header Files
+  + Resource Files
+  + Bitmaps
+  + Other Files
+scroll:0
+[State]
+SCREEN: 2960 1357 0 0 1680 1028 0 0 N 0 0 0 0 1653 908 0
+CWD: ../../CSProjects/WinFormsTest/
+BUFFER: BN="../../../hw.php"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=131680 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.636 CL=1 LE=0 CX=2 CY=41 WI=5 BI=24 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem2.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=28 LE=0 CX=29 CY=1 WI=5 BI=11 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem1.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=2 CY=1 WI=5 BI=12 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem8.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.2855 CL=11 LE=0 CX=12 CY=42 WI=5 BI=13 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem9.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.1498 CL=35 LE=0 CX=36 CY=27 WI=5 BI=14 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem4.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.29 CL=8 LE=0 CX=9 CY=3 WI=5 BI=15 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem5.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=2 CY=1 WI=5 BI=16 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem6.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=2 CY=1 WI=5 BI=17 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem7.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.552 CL=15 LE=0 CX=16 CY=28 WI=5 BI=18 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem3.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.410 CL=16 LE=0 CX=17 CY=22 WI=5 BI=19 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem10.py"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Python	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.853 CL=26 LE=0 CX=27 CY=33 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../Python/Problem10.cpp"
+BI: MA=1 74 1  TABS=1 4  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.658 CL=3 LE=0 CX=4 CY=29 WI=5 BI=21 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/Applications/MAMP/htdocs/action.php"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.192 CL=8 LE=0 CX=9 CY=9 WI=5 BI=22 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/Applications/MAMP/htdocs/mailtest.php"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.66 CL=1 LE=0 CX=2 CY=7 WI=5 BI=23 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/Applications/MAMP/htdocs/formtest.php"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.272 CL=8 LE=0 CX=9 CY=12 WI=5 BI=25 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/Applications/MAMP/htdocs/test.php"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.207 CL=16 LE=0 CX=17 CY=14 WI=5 BI=26 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="/Applications/MAMP/htdocs/mailaction.php"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=544 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.272 CL=5 LE=0 CX=6 CY=16 WI=5 BI=27 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../../../personaltrainer/logotest.htm"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=131616 TL=0 MLL=0 ASE=0 LNL=0 LCF=0 CAPS=0 E=71 ESBU2=-1
+VIEW: LN=.3805 CL=45 LE=0 CX=46 CY=22 WI=5 BI=5 HT=0 HN=0 HF=0 HC=4
+WINDOW: 826 0 827 908 0 0 N  WF=0 WT=3 "Bitstream Vera Sans Mono [bitstream],11,0,1"
+BUFFER: BN="../../../hw.php"
+VIEW: LN=.636 CL=1 LE=0 CX=2 CY=41 WI=42 BI=24 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 826 908 0 0 N  WF=0 WT=3 "Default Unicode Font,10,0,1"
+BUFFER: BN="../../../personaltrainer/logotest.htm"
+VIEW: LN=.4069 CL=25 LE=0 CX=9 CY=32 WI=40 BI=5 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+/Applications/MAMP/htdocs/formtest.php
+/Applications/MAMP/htdocs/action.php
+/Applications/MAMP/htdocs/test.php
+/Applications/MAMP/htdocs/mailtest.php
+/Applications/MAMP/htdocs/mailaction.php
+../../../hw.php
+/sw/lib/perl5/Fink/Services.pm
+../../../personaltrainer/default.htm
+../../../personaltrainer/logotest.htm
+DEBUG: 0 0 0 0 3 0
+printf
+strcpy
+std::*
+TBCLASS: 0 0
