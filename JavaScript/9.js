@@ -12,3 +12,22 @@
   Answer:
   31875000
 */
+
+
+var pythagoreanTriplet = function ()
+{
+   var c = 998;
+   for (; c > 1; --c) {
+      var c2 = c*c;
+      var a = 1;
+      var b = 1000 - c - a;
+      for (; a < b; ++a, --b) {
+         if ((a*a + b*b) === c2) {
+            return a*b*c;
+         }
+      }
+   }
+};
+
+
+console.log(pythagoreanTriplet());
