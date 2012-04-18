@@ -28,8 +28,7 @@
  down, left, right, or diagonally) in the 2020 grid?
  */
 /*
- Answer:
-
+ Answer: 70600674 (the product of 89 x 94 x 97 x 87).
  */
 
 var grid = [
@@ -65,17 +64,91 @@ var greatestAdjacentProduct4 = function (numbers)
    var x;
    var y;
    /*
-    * Do all the horizontal products first.
+    * 1) Do all the horizontal products.
     */
    for (y = 0; y < numbers.length; ++y) {
       if (numbers[y].length < 4) {
          return [0,0,0,0,0];
       }
       for (x = 3; x < numbers[y].length; ++x) {
+	 var product = numbers[y][x];
+	 product *= numbers[y][x-1];
+	 product *= numbers[y][x-2];
+	 product *= numbers[y][x-3];
+	 if (product > result[4]) {
+	    for (var i = 0; i < 4; ++i) {
+	       result[i] = numbers[y][x-3+i];
+	    }
+	    result[4] = product;
+	    console.log(1);
+	 }
+      }
+   }
+   /* 
+    * No more need to check for length < 4, we've now established we have at
+    * least 4 rows.
+   */
+
+
+   /*
+    * 2) Do all the vertical products.
+    */
+   for (y = 3; y < numbers.length; ++y) {
+      for (x = 0; x < numbers[y].length; ++x) {
+	 var product = numbers[y][x];
+	 product *= numbers[y-1][x];
+	 product *= numbers[y-2][x];
+	 product *= numbers[y-3][x];
+	 if (product > result[4]) {
+	    for (var i = 0; i < 4; ++i) {
+	       result[i] = numbers[y-3+i][x];
+	    }
+	    result[4] = product;
+	    console.log(2);
+	 }
       }
    }
 
-   for (y = 0; ((y < numbers.length) && (y < 4)); ++y) {
+   /*
+    * 3) Do all the 1st quadrant diagonals: /
+    */
+   for (y = 3; y < numbers.length; ++y) {
+      for (x = 0; x < numbers[y].length-3; ++x) {
+	 var product = numbers[y][x];
+	 product *= numbers[y-1][x+1];
+	 product *= numbers[y-2][x+2];
+	 product *= numbers[y-3][x+3];
+	 if (product > result[4]) {
+	    for (var i = 0; i < 4; ++i) {
+	       result[i] = numbers[y-3+i][x+3-i];
+	    }
+	    result[4] = product;
+	    console.log(3);
+	 }
+      }
+   }
+
+   /*
+    * 4) Do all the 2nd quadrant diagonals: \
+    */
+   for (y = 3; y < numbers.length; ++y) {
+      for (x = 3; x < numbers[y].length; ++x) {
+	 var product = numbers[y][x];
+	 product *= numbers[y-1][x-1];
+	 product *= numbers[y-2][x-2];
+	 product *= numbers[y-3][x-3];
+	 if (product > result[4]) {
+	    for (var i = 0; i < 4; ++i) {
+	       result[i] = numbers[y-3+i][x-3+i];
+	    }
+	    result[4] = product;
+	    console.log(4);
+	 }
+      }
    }
       
+   return result;
 };
+
+
+console.log(greatestAdjacentProduct4(grid));
